@@ -1,0 +1,4 @@
+User-agent: * 
+Disallow: /contact/thankyou/
+
+Sitemap: http://ERP.im/sitemap.xml
