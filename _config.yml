@@ -12,6 +12,6 @@ relative_permalinks: false
 excerpt_separator: "{{ more }}"
 
 safe:     true
-pygments: false
+highlighter: pygments
 markdown: 'kramdown'
 timezone: 'America/Chicago'
