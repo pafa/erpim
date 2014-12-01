@@ -1,0 +1,21 @@
+<title>{{ page.title }} | {{ site.title }}</title>
+<meta name="robots" content="index,follow"/>
+<meta name="author" content="{{ site.author.name }}">
+<link rel="shortcut icon" href="public/img/favicon.png" />
+{% if page.keywords %}
+  <meta name="keywords" content="{{ page.keywords }}">
+{% endif %}
+{% if page.description  %}
+  <meta name="description " content="{{ page.description  }}">
+{% endif %}
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta name="mssmarttagspreventparsing" content="true"/>
+<!-- <link rel="stylesheet" href="/public/css/bootstrap.css"> -->
+<link rel="stylesheet" href="/public/css/font-awesome.css">
+<link rel="stylesheet" href="/public/js/prettify/prettify.css">
+
+<link href="/pages/atom.xml" rel="alternate" title="{{site.title}}" type="application/atom+xml">
+<link rel="start" href="http://erp.im" title="ERP.im"/>
+<link href="/public/css/screen.css" media="screen" rel="Stylesheet" title="ERP.im" type="text/css" />
+<link rel="stylesheet" type="text/css" href="/public/css/mobile.css" media="handheld, only screen and (max-device-width: 960px)" />

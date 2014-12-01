@@ -1,17 +1,31 @@
-name:   'ERP.im'
-url:    'http://ERP.im'
-author: 'ERPIM'
+permalink: /:year/:month/:day/:title.html
+paginate: 1
+markdown: kramdown
 
-include:  ['_pages']
+kramdown:
+  input: GFM
 
-paginate:      10
-paginate_path: '/blog/page:num/'
-permalink:     '/blog/:year/:title/'
-relative_permalinks: false
+# 作者信息
+author:
+  name: ERP.im
+  email: hi@erp.im
+  link: http://erp.im
 
-excerpt_separator: "{{ more }}"
+# 站点信息
+title: ERP.im
+description: ERP.im
+url: http://ERP.im
+rss_url: /pages/atom.xml
 
-safe:     true
-highlighter: pygments
-markdown: 'kramdown'
-timezone: 'America/Chicago'
+# gavatar头像及Favicon
+gavatar: http://ERP.im/public/img/gavatar.png
+favicon: http://ERP.im/public/img/favicon.ico
+
+# google analytics 设置
+ga:
+  id: UA-39939963-2
+  url: ERP.im
+
+# disqus 设置
+disqus:
+  shortname: erpim

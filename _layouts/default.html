@@ -1,78 +1,44 @@
-{% capture location %}{{ page.url | remove_first:'/' | split:'/' | first }}{% endcapture %}<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="chrome=1" />
-		<title>{% if page.title %}{{ page.title }}{% else %}ERP.im{% endif %}</title>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh">
 
-		<link rel="canonical" href="{{ site.url }}{{ page.url }}" />
-{% if page.blogfeed %}
-		<link rel="alternate" type="application/atom+xml" title="{{ site.name }} — Feed" href="{{ site.url }}/blog/feed.atom" />
-{% endif %}
-		<link rel="stylesheet" href="/css/main.css" />
-		<link rel="stylesheet" href="/css/syntax.css" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!--[if lt IE 9]>
-		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-	</head>
-	<body>
-		<div class="wrapper{% if location == '' %} home{% endif %}">
-			<header>
-				<h1><a href="/"><img src="/img/erpim-logo.png" alt="{{ site.name }}" width="300" /></a></h1>
-				<nav><ul>
-					<li><a {% if location == 'links' %}class="active" {% endif %}href="/Links/">Links</a></li>
-					<!-- <li><a {% if location == 'projects' %}class="active" {% endif %}href="/projects/">新闻</a></li> -->
-					<li><a href="http://news.erp.im/" target='_blank'>News</a></li>
-					<li><a {% if location == 'blog' %}class="active" {% endif %}href="/blog/">Blog</a></li>
-					<li><a {% if location == 'about' %}class="active" {% endif %}href="/about/">About</a></li>
-				</ul></nav>
-			</header>
-			<section>
-				{{ content }}
-			</section>
-			<footer>
+<head>
+  {% include header.html %}
+</head>
 
-				<p><a href="http://erp.im">ERP.im</a>，这里是关于企业级软件和企业管理的信息中心，可以获得最全面、最及时、最准确的信息，并专业挑选精华内容形成《ERP.im周刊》，周刊获取请点击下方“现在订阅”按钮。</p>
 
-<!-- 订阅服务 -->
-					<div>
-						<button>
-							<a href="http://eepurl.com/7g1IL" target='_blank'>现在订阅</a>
-						</button>
-					</div>
-<!-- 订阅服务 -->
-				<br/>
+  <body id="erpim">
+    <div id="head">
+      <div id="header-content">
+        <!-- <a href="/">
+          <img src="/public/img/logo.png" id="erp.im">
+        </a> -->
+        <div id="about">
+          <h1 class="default">Welcome to <a href="http://erp.im">ERP.im</a></h1>
+          <h1 class="mobile">Welcome to ERP.im</h1>
+          <p style="color: white" class="default">
+          <a href="http://news.erp.im" target="_blank">ERP News</a> / <a href="/pages/archives.html">Archives</a> / <a href="/pages/about.html">About</a>
+          </p>
+        </div>
+      </div>
+    </div>
 
-				<p><a href="http://twitter.com/erpdotim" target='_blank'>Twitter</a> | <a href="mailto:hi@erp.im">Email to us</a>
 
-				<p>
-					<small>© {{ site.time | date: '%Y' }} ERP.im </small><br />
-					<!-- <small>Made with <a href="http://jekyllrb.com/">Jekyll</a> &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small> -->
-				</p>
-			</footer>
-		</div>
-		<script src="/js/scale.fix.js"></script>
-		<script type="text/javascript">
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-39939963-2']);
-			_gaq.push(['_trackPageview']);
+  <div id="box">
+    <div id="content">
+      <div id="pjax">
+      {{ content }}
+      </div>
 
-			var disqus_shortname  = 'erpim',
-			    disqus_identifier = '{{ page.path | split:'/' | last | cgi_escape }}',
-			    disqus_url        = '{{ site.url }}{{ page.url | uri_escape }}'
-			;
-			(function() {
-				var load = function(src){
-					var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = src;
-					var e = document.getElementsByTagName('script')[0]; e.parentNode.insertBefore(s, e);
-				};
-				load(('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js');
-				load('//' + disqus_shortname + '.disqus.com/count.js');
-				if (document.getElementById('disqus_thread')) {
-					load('//' + disqus_shortname + '.disqus.com/embed.js');
-				}
-			})();
-		</script>
-	</body>
+      <div id="footer">
+        <div id="footer_text">
+          &copy; 2013-2014 ERP.im  <a href="/pages/atom.xml" target="_blank">RSS Feed</a> <a href="/pages/archives.html" class="mobile">Archives</a> <a href="/pages/about.html" class="mobile">About</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% include footer.html %}
+  {% include googleanalytics.html %}
+  </body>
 </html>
