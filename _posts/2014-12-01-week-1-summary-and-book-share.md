@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 每周一次的贡献送书活动，第一周
-category: 技术
+category: 公告
 tags: [Book, 规则, 21世纪资本论]
 keywords: Book,ERP.im,规则,21世纪资本论
 description: 每周一次的贡献送书活动，第一周
