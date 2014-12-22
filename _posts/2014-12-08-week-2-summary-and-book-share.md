@@ -20,7 +20,7 @@ description: 每周一次的贡献送书活动，第二周
 3.SAPer 13
 
 
-## 每周的送书规则
+## 本周的送书规则
 
 本周日期区间为：20141208-20141214
 
@@ -31,8 +31,8 @@ description: 每周一次的贡献送书活动，第二周
 PS：贡献值不是提交数量，而是提交的质量，也就是被认可“赞”的次数，同一篇文章被重复分享，贡献值将纪录在第一位用户上。
 
 <http://news.erp.im/faq.html>
-  
-  
+
+
 ## 本周书目《SAP ERP财务：配置与设计》
 
 ![SAP ERP财务：配置与设计](/public/blog/SAP-ERP-Financials-Configuration-and-Design.jpg)
