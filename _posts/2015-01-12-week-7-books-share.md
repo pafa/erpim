@@ -2,8 +2,8 @@
 layout: post
 title: 每周一次的贡献送书活动，第七周
 category: 公告
-tags: [Remote: Office Not Required]
-keywords: Book,ERP.im,Remote: Office Not Required
+tags: [Remote:Office Not Required]
+keywords: Book,ERP.im,Remote:Office Not Required
 description: 每周一次的贡献送书活动，第七周
 ---
 
@@ -22,11 +22,11 @@ description: 每周一次的贡献送书活动，第七周
 3. 下周一公布最高得票者。
 4. 获得赠书资格者请回复您的收货地址，或者发送邮件到：hi@erp.im
 
-## 本周书目《Office Not Required》
+## 本周书目《Remote：Office Not Required》
 
-![Office Not Required](/public/blog/Remote.png)
+![Remote](/public/blog/Remote.png)
 
-Office Not Required
+Remote
 
 远程办公已悄然成为业界规范，而不是特殊案例。据人力资源团体美国薪酬管理协会(WorldatWork)今年7月份的一次调查，88%的美国公司现在允许或鼓励远程办公。以IBM为代表的一些公司始终坚持大多数员工在大多数时间内远程工作的做法。汉森在其新著《远程办公革命》(Remote： Office Not Required)中援引了“蓝色巨人”( Big Blue，IBM公司的绰号)发布的一份白皮书。这份白皮书预测称，远程办公已经为该公司节省了超过1亿美元的房地产成本。
 
