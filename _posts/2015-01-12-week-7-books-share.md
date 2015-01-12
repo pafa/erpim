@@ -2,8 +2,8 @@
 layout: post
 title: 每周一次的贡献送书活动，第七周
 category: 公告
-tags: [Remote:Office Not Required ]
-keywords: Book,ERP.im,Remote:Office Not Required
+tags: [Remote ]
+keywords: Book,ERP.im,Remote
 description: 每周一次的贡献送书活动，第七周
 ---
 
